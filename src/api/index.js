@@ -12,9 +12,15 @@ export const fetchData = async () => {
             deaths,
             lastUpdate,
         }
-        
         return modifiedData
         } catch (error) {
-
         }
+}
+
+export const fetchDailyData = async() => {
+    try {
+        const { data } = await axios.get(`${url}/daily`)
+        console.log(data);
+    } catch (error){
+    }
 }

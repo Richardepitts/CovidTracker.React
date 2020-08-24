@@ -1,6 +1,4 @@
 import React from 'react';
-// This a more readable way to do exports but it requires
-// an index.js in the components folder.
 import { Cards, Chart, CountryPicker } from './components'
 import styles from './App.module.css';
 import { fetchData } from './api/index'
